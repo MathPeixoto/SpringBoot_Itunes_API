@@ -1,0 +1,8 @@
+variables:
+  urlItunes: "https://itunes.apple.com/"
+  urlTerm: "https://itunes.apple.com/search?term=ocean12&limit=5"
+  artistId: 1000
+  term: "ocean12"
+  id: "1000"
+  differentId: 1
+  errorStatusCode: 300

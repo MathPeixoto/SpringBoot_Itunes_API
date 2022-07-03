@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./microservices-spring-boot
+    username: sa
+    password:
+
+  h2:
+    console.enabled: true
+    console.path: /h2-itunes
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect : org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto : create-drop
+    open-in-view: true
+
+management:
+  endpoints:
+    web:
+      path-mapping:
+        health: /healthcheck
+
+variables:
+  urlItunes: "https://itunes.apple.com/"
+
